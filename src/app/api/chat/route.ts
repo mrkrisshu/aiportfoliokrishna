@@ -44,7 +44,7 @@ export async function POST(req: Request) {
     };
 
     const result = streamText({
-      model: openrouter('qwen/qwen2-7b-instruct'), // ✅ switched to Qwen2 7B Instruct
+      model: openrouter('google/gemini-2.5-flash-lite'), // ✅ switched to Qwen2 7B Instruct
       messages,
       toolCallStreaming: true,
       tools,
