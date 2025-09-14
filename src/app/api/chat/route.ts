@@ -19,7 +19,7 @@ function errorHandler(error: unknown) {
   return JSON.stringify(error);
 }
 
-// Initialize OpenRouter client
+// ✅ Initialize OpenRouter client
 const openrouter = createOpenAI({
   apiKey: process.env.OPENROUTER_API_KEY,
   baseURL: 'https://openrouter.ai/api/v1',
@@ -30,8 +30,14 @@ export async function POST(req: Request) {
     const { messages } = await req.json();
     console.log('[CHAT-API] Incoming messages:', messages);
 
-    messages.unshift(SYSTEM_PROMPT);
+    // ✅ Ensure system prompt is formatted correctly
+    if (typeof SYSTEM_PROMPT === 'string') {
+      messages.unshift({ role: 'system', content: SYSTEM_PROMPT });
+    } else {
+      messages.unshift(SYSTEM_PROMPT);
+    }
 
+    // ✅ Define tools
     const tools = {
       getProjects,
       getPresentation,
@@ -43,8 +49,10 @@ export async function POST(req: Request) {
       getInternship,
     };
 
+    // ✅ Stream with CHEAP + RELIABLE Qwen2 7B model
     const result = streamText({
-      model: openrouter('meta-llama/llama-3-8b-instruct'), // ✅ Free & fast model
+      client: openrouter,
+      model: 'qwen/qwen2-7b-instruct', // 👈 Ultra-cheap (~$0.0018 / 1K tokens)
       messages,
       toolCallStreaming: true,
       tools,
