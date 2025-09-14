@@ -44,7 +44,7 @@ export async function POST(req: Request) {
     };
 
     const result = streamText({
-      model: openrouter('deepseek/deepseek-chat-v3-0324:free'), // ✅ Free & fast model
+      model: openrouter('mistralai/mistral-nemo'), // ✅ Free & fast model
       messages,
       toolCallStreaming: true,
       tools,
