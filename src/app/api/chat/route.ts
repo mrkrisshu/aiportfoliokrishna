@@ -44,7 +44,7 @@ export async function POST(req: Request) {
     };
 
     const result = streamText({
-      model: openrouter('mistralai/mistral-nemo'), // ✅ Free & fast model
+      model: openrouter('meta-llama/llama-3-8b-instruct'), // ✅ Free & fast model
       messages,
       toolCallStreaming: true,
       tools,
