@@ -55,6 +55,38 @@ const PROJECT_CONTENT = [
       },
     ],
   },
+
+  {
+  title: 'EventXX 🎉',
+  description:
+    'EventXX is a modern event management platform that leverages blockchain technology to ensure secure, transparent, and verifiable event registration and ticketing. Users can create, manage, and join events seamlessly, with features like participant tracking, reminders, and immutable record-keeping for enhanced trust and reliability.',
+  techStack: ['React', 'Node.js', 'MongoDB', 'TailwindCSS', 'Ethereum', 'Smart Contracts', 'Web3.js'],
+  date: '2025',
+  links: [
+    {
+      name: 'website',
+      url: 'https://event-xx.vercel.app/', // Correct project URL
+    },
+    {
+      name: 'github',
+      url: 'https://github.com/mrkrisshu/EventXX', // Replace with actual repo if different
+    },
+  ],
+  images: [
+    {
+      src: '/event1.png',
+      alt: 'EventXX Dashboard',
+    },
+    {
+      src: '/event2.png',
+      alt: 'Event Creation Page',
+    },
+    {
+      src: '/event3.png',
+      alt: 'Blockchain Ticketing Page',
+    },
+  ],
+},
 ];
 
 // Define interface for project prop
