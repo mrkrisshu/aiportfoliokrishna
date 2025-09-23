@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import { Image as Img } from 'lucide-react';
 import { ChevronRight, Link } from 'lucide-react';
 import { Separator } from '@/components/ui/separator';
 
@@ -8,13 +7,13 @@ const PROJECT_CONTENT = [
   {
     title: 'Online Grocery Store',
     description:
-      'An online grocery store platform built to provide seamless shopping experience with product listings, cart, checkout, and order management.',
+      'An online grocery store platform built to provide a seamless shopping experience with product listings, cart, checkout, and order management.',
     techStack: ['PHP', 'MySQL', 'JavaScript', 'CSS3'],
     date: '2025',
-    link: [
+    links: [
       {
         name: 'website',
-        url: 'https://bhuvaneswaristores.great-site.net/index.php', // Replace with actual URL if available
+        url: 'https://bhuvaneswaristores.great-site.net/index.php',
       },
     ],
     images: [
@@ -37,11 +36,11 @@ const PROJECT_CONTENT = [
     links: [
       {
         name: 'website',
-        url: 'https://edumasteryy.vercel.app/', // Replace with actual URL
+        url: 'https://edumasteryy.vercel.app/',
       },
       {
         name: 'github',
-        url: 'https://github.com/mrkrisshu/Edu-mastery', // Replace with GitHub link
+        url: 'https://github.com/mrkrisshu/Edu-mastery',
       },
     ],
     images: [
@@ -55,38 +54,68 @@ const PROJECT_CONTENT = [
       },
     ],
   },
-
   {
-  title: 'EventXX 🎉',
-  description:
-    'EventXX is a modern event management platform that leverages blockchain technology to ensure secure, transparent, and verifiable event registration and ticketing. Users can create, manage, and join events seamlessly, with features like participant tracking, reminders, and immutable record-keeping for enhanced trust and reliability.',
-  techStack: ['React', 'Node.js', 'MongoDB', 'TailwindCSS', 'Ethereum', 'Smart Contracts', 'Web3.js'],
-  date: '2025',
-  links: [
-    {
-      name: 'website',
-      url: 'https://event-xx.vercel.app/', // Correct project URL
-    },
-    {
-      name: 'github',
-      url: 'https://github.com/mrkrisshu/EventXX', // Replace with actual repo if different
-    },
-  ],
-  images: [
-    {
-      src: '/event1.png',
-      alt: 'EventXX Dashboard',
-    },
-    {
-      src: '/event2.png',
-      alt: 'Event Creation Page',
-    },
-    {
-      src: '/event3.png',
-      alt: 'Blockchain Ticketing Page',
-    },
-  ],
-},
+    title: 'EventXX 🎉',
+    description:
+      'EventXX is a modern event management platform that leverages blockchain technology to ensure secure, transparent, and verifiable event registration and ticketing. Users can create, manage, and join events seamlessly, with features like participant tracking, reminders, and immutable record-keeping for enhanced trust and reliability.',
+    techStack: ['React', 'Node.js', 'MongoDB', 'TailwindCSS', 'Ethereum', 'Smart Contracts', 'Web3.js'],
+    date: '2025',
+    links: [
+      {
+        name: 'website',
+        url: 'https://event-xx.vercel.app/',
+      },
+      {
+        name: 'github',
+        url: 'https://github.com/mrkrisshu/EventXX',
+      },
+    ],
+    images: [
+      {
+        src: '/event1.png',
+        alt: 'EventXX Dashboard',
+      },
+      {
+        src: '/event2.png',
+        alt: 'Event Creation Page',
+      },
+      {
+        src: '/event3.png',
+        alt: 'Blockchain Ticketing Page',
+      },
+    ],
+  },
+  {
+    title: 'Buildy 🛠️',
+    description:
+      'Buildy is a web-based platform that allows users to create, customize, and deploy their own websites effortlessly. With drag-and-drop functionality, responsive templates, live previews, and a built-in PPT generator, users can quickly build professional websites and presentations without any coding knowledge.',
+    techStack: ['React', 'Node.js', 'TailwindCSS', 'Vercel', 'JavaScript', 'HTML', 'CSS'],
+    date: '2025',
+    links: [
+      {
+        name: 'website',
+        url: 'https://buildly-ebon.vercel.app/',
+      },
+      {
+        name: 'github',
+        url: 'https://github.com/mrkrisshu/Buildy',
+      },
+    ],
+    images: [
+      {
+        src: '/buildy1.png',
+        alt: 'Buildy Homepage',
+      },
+      {
+        src: '/buildy2.png',
+        alt: 'Website Builder Interface',
+      },
+      {
+        src: '/buildy3.png',
+        alt: 'PPT Generator Interface',
+      },
+    ],
+  },
 ];
 
 // Define interface for project prop
@@ -189,7 +218,7 @@ const ProjectContent = ({ project }: { project: ProjectProps }) => {
   );
 };
 
-// Main data export with updated content
+// Main data export with updated content (4 projects)
 export const data = [
   {
     category: 'E-Commerce Project',
@@ -202,5 +231,17 @@ export const data = [
     title: 'Education Flash Cards',
     src: '/flashcard.jpeg',
     content: <ProjectContent project={{ title: 'Education Flash Cards & Quiz Tracker' }} />,
+  },
+  {
+    category: 'Event Management',
+    title: 'EventXX 🎉',
+    src: '/event1.png',
+    content: <ProjectContent project={{ title: 'EventXX 🎉' }} />,
+  },
+  {
+    category: 'Website Builder',
+    title: 'Buildy 🛠️',
+    src: '/buildy1.png',
+    content: <ProjectContent project={{ title: 'Buildy 🛠️' }} />,
   },
 ];
