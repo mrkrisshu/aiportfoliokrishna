@@ -1,6 +1,24 @@
 import React from 'react';
 
-export function Gallery({ data, onImageClick }) {
+interface GalleryImage {
+  id: string | number;
+  src: string;
+  alt: string;
+  title: string;
+  span?: string;
+}
+
+interface GalleryProps {
+  data: GalleryImage[];
+  onImageClick: (src: string) => void;
+}
+
+interface ImageModalProps {
+  src: string | null;
+  onClose: () => void;
+}
+
+export function Gallery({ data, onImageClick }: GalleryProps) {
   return (
     <section id="portfolio" className="py-20 bg-gray-900">
       <div className="container mx-auto px-6">
@@ -32,7 +50,7 @@ export function Gallery({ data, onImageClick }) {
   );
 }
 
-export function ImageModal({ src, onClose }) {
+export function ImageModal({ src, onClose }: ImageModalProps) {
   if (!src) return null;
 
   return (
