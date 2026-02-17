@@ -1,0 +1,45 @@
+/* TEAM */
+Name: Krishna Bantola
+Role: AI Engineer | Full Stack Developer | Android Engineer
+Location: Bengaluru, Karnataka, India
+Contact: mrkrisshu [at] gmail.com
+Also Known As: mrkrishnu, Krishna Chhetri
+
+/* SOCIAL */
+Website: https://krishnabantola.site
+LinkedIn: https://linkedin.com/in/krishna-bantola-370a0b153
+GitHub: https://github.com/MRKRISHNU
+Instagram: https://www.instagram.com/__krishnachhetri/
+Twitter/X: https://x.com/bantola_krishna
+
+/* EDUCATION */
+MCA (2026) — CMR Group of Institutions, Bengaluru
+BCA (2024) — Kristu Jayanti College, Bengaluru
+
+/* ACHIEVEMENTS */
+Hackathon Warrior — 2x Finalist, Top 10 Hackathons
+Builder of Impact: From Static Portfolio to AI-Powered Interactive Portfolio
+Published Android Developer on Google Play Store
+
+/* EXPERIENCE */
+Bhai.AR — AI & Full Stack Developer
+
+/* LANGUAGES */
+English, Hindi, Nepali
+
+/* SITE */
+Tech Stack: Next.js 15, React 19, TypeScript, Tailwind CSS, Framer Motion
+AI Integration: Vercel AI SDK, OpenAI, LLM-powered Chatbot
+Features: AI-powered interactive portfolio with chatbot, intelligent responses, dynamic content
+Hosting: Vercel
+Last Updated: 2025
+
+/* EXPERTISE */
+Artificial Intelligence, Generative AI, Large Language Models (LLMs)
+Prompt Engineering, AI-Powered Application Development
+Full Stack Web Development (Next.js, React, TypeScript, JavaScript, Node.js, TailwindCSS)
+Android App Development (Kotlin, Java, Android Studio, Google Play Store)
+Python Development, Natural Language Processing (NLP)
+Computer Vision, Deep Learning, Neural Networks
+API Development, Database Management (MongoDB, PostgreSQL, Firebase)
+Cloud Services, Git, UI/UX Design

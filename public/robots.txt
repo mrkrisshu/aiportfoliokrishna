@@ -1,0 +1,34 @@
+# robots.txt for krishnabantola.site
+# Krishna Bantola — AI Engineer | Full Stack Developer | Android Engineer
+
+User-agent: *
+Allow: /
+Allow: /chat
+Allow: /chat?query=*
+Disallow: /api/
+
+User-agent: Googlebot
+Allow: /
+Allow: /chat
+
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.webp$
+Allow: /*.svg$
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+Sitemap: https://krishnabantola.site/sitemap.xml
+
+# Host
+Host: https://krishnabantola.site
